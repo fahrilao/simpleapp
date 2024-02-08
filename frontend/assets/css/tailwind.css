@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card {
+  @apply bg-white rounded-lg shadow-md;
+}
+
+.card-header {
+  @apply px-8 pt-5;
+}
+
+.card-title {
+  @apply text-xl;
+}
+
+.card-body {
+  @apply px-8 pt-5 pb-8;
+}
+
+.row {
+  @apply flex flex-col md:flex-row gap-5 mb-5;
+}
+
+table.border td,
+table.border th {
+  @apply border-2;
+}
+
+.btn-primary {
+  @apply inline-block px-4 py-2 rounded-md bg-blue-500 hover:bg-blue-600 disabled:bg-blue-50 text-white disabled:text-blue-300 font-semibold mt-5 flex justify-center items-center;
+}
